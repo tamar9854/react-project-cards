@@ -1,0 +1,14 @@
+.carditem {
+  max-height: 60vh;
+  font-size: smaller;
+}
+
+.carditem img {
+  margin: auto;
+  width: 95%;
+  height: 27vh;
+  box-shadow: 1px 1px 1px 1px #666;
+}
+.carditem > .card-footer i {
+  cursor: pointer;
+}

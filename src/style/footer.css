@@ -1,0 +1,15 @@
+.footer-shadow {
+  box-shadow: 1px 3px 2px 3px #777;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-text {
+  font-size: 0.5em;
+  color: #666;
+}

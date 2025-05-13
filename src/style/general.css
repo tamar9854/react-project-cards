@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+.vh-80 {
+  height: 80vh;
+}
+.vh-20 {
+  height: 20vh;
+}
+.vh-10 {
+  height: 10vh;
+}
+
+.fieldName {
+  display: inline-block;
+  margin: 2px;
+  padding-right: 2px;
+  width: 6rem;
+}
+
+@media (min-width: 768px) {
+  .position-md-static {
+    position: static !important;
+    top: auto;
+    width: auto;
+  }
+}
