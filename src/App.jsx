@@ -10,7 +10,8 @@ import MyCards from "./pages/MyCards"
 import EditCard from "./pages/EditCard"
 import Cardspage from "./pages/Cardspage"
 import FavoriteCards from "./pages/FavoriteCards";
-import UserList from "./pages/UserList"
+import UserList from "./pages/UserList";
+import About from "./pages/About";
 
 import './style/general.css'
 import CardDetails from "./pages/CardDetails"
@@ -36,6 +37,7 @@ function App() {
               <Route path="/card-details/:cardId" element={<CardDetails />} />
               <Route path="/search/:search" element={<Cardspage />} />
               <Route path="/userslist" element={<UserList />} />
+              <Route path="/about" element={<About />} />
 
             </>
           }
