@@ -16,7 +16,6 @@ function Cardspage() {
     const loadCards = async () => {
 
         const res = await cardService.getAllCards()
-        console.log(res)
         setCards(res.data)
         setLoading(false)
     }
@@ -32,7 +31,6 @@ function Cardspage() {
         const temp = [...cards]
         const index = temp.findIndex((card) => card._id == updatedcard._id)
         if (index > -1) {
-            console.log(index, updatedcard)
             temp[index] = updatedcard
             setCards(temp)
         }
