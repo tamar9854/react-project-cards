@@ -38,6 +38,7 @@ function NavBar() {
                                     <li className="nav-item"><NavLink className="nav-link " to="/my-cards">My Cards</NavLink></li>
                                     <li className="nav-item"><NavLink className="nav-link " to="/create-card">Create Card</NavLink></li>
                                     <li className="nav-item"><NavLink className="nav-link " to="/my-favorites">My Favorites</NavLink></li>
+                                    <li className="nav-item"><NavLink className="nav-link " to="/my-business">My Business</NavLink></li>
                                     {user.isAdmin === true && <li className="nav-item"><NavLink className="nav-link " to="/userslist">Users list</NavLink></li>}
 
                                 </>
