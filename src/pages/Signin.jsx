@@ -37,6 +37,8 @@ function Signin() {
 
                 userService.setToken(res.data)
                 const data = userService.getTokenData();
+                const userRes = await userService.getUser(data._id)
+                data.details = userRes.data
                 login(data);
 
                 navigate("/")

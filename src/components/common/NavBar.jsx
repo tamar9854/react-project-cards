@@ -51,10 +51,12 @@ function NavBar() {
                         </ul>
 
                         <span style={{ cursor: 'pointer' }} className="navbar-brand" onClick={() => color === 'dark' ? light() : dark()}>  <i className={`bi bi-moon${color === 'dark' ? '' : '-fill'}`}></i> </span>
-                        {isLoggedin && <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" aria-label="Search" value={search} onChange={(e) => setSearch(e.target.value)} />
-                            <button className="btn btn-outline-success" type="button" onClick={handleClick}>Search</button>
-                        </form>}
+                        {isLoggedin && <>
+                            {user.details && <img style={{ width: "2%" }} src={user.details.image.url} alt={user.details.image.alt} />}
+                            <form className="d-flex" role="search">
+                                <input className="form-control me-2" type="search" aria-label="Search" value={search} onChange={(e) => setSearch(e.target.value)} />
+                                <button className="btn btn-outline-success" type="button" onClick={handleClick}>Search</button>
+                            </form></>}
                     </div>
                 </div>
             </nav >
